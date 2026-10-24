@@ -59,6 +59,30 @@
         font-size: 1.1rem;
         line-height: 1.7;
       }
+
+      .actions {
+        margin-top: 24px;
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 12px 20px;
+        background: #22c55e;
+        color: #0f172a;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .button.secondary {
+        background: transparent;
+        border: 1px solid rgba(148, 163, 184, 0.35);
+        color: var(--text);
+      }
     </style>
   </head>
   <body>
@@ -69,6 +93,11 @@
         This is a simple GitHub Pages demo hosted from the repository
         <strong>xiaolizi15/xiaolizi15.github.io</strong>.
       </p>
+
+      <div class="actions">
+        <a class="button" href="./hello-world.html">Open Hello World Page</a>
+        <a class="button secondary" href="https://xiaolizi-15-hello-world.pages.dev/" target="_blank" rel="noreferrer">Open Cloudflare Pages App</a>
+      </div>
     </main>
   </body>
 </html>
